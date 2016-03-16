@@ -1,7 +1,7 @@
 /*
     job of Rectangle class-
-        Calculate Area
-        Calculate Perimeter
+        Calculate all the calculations which includes length and/or width of the Rectangle
+        Comparative checks with another Rectangle
  */
 public class Rectangle {
     private double length,width;
