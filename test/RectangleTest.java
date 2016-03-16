@@ -1,33 +1,41 @@
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class RectangleTest {
 
     @Test
-    public void test_calculateArea_gives_the_area_of_the_rectangle_created() throws Exception {
-        Rectangle rectangle = new Rectangle(12, 6);
-        double expected = 72;
-        Assert.assertEquals(expected,rectangle.calculateArea(),2);
+    public void rectangleCannotBeCreatedUsingNegativeValues() throws Exception {
+        try {
+            Rectangle.create(-2, -6);
+            assertTrue(false);
+        } catch (Exception e) {
+            assertEquals("Rectangle cannot be created with length -2.0 and width -6.0", e.getMessage());
+        }
     }
 
     @Test
-    public void test_calculateArea_gives_the_area_of_the_rectangle_created_with_decimal_values_as_sides() throws Exception {
-        Rectangle rectangle = new Rectangle(7.5, 5);
+    public void rectangleCannotBeCreatedUsingZeroAsLengthOrWidth() throws Exception {
+        try {
+            Rectangle.create(3, 0);
+            assertTrue(false);
+        } catch (Exception e) {
+            assertEquals("Rectangle cannot be created with length 3.0 and width 0.0", e.getMessage());
+        }
+    }
+
+    @Test
+    public void areaOfRectangleShouldGiveAreaWhenPositiveValuesAreGivenAsLengthAndWidth() throws Exception {
+        Rectangle rectangle = Rectangle.create(7.5, 5);
         double expected = 37.5;
-        Assert.assertEquals(expected,rectangle.calculateArea(),2);
+        assertEquals(expected, rectangle.calculateArea(), 2);
     }
 
     @Test
-    public void test_calculatePerimeter_gives_the_perimeter_of_the_rectangle_created() throws Exception {
-        Rectangle rectangle = new Rectangle(12, 6);
-        double expected = 36;
-        Assert.assertEquals(expected,rectangle.calculatePerimeter(),2);
-    }
-
-    @Test
-    public void test_calculatePerimeter_gives_the_perimeter_of_the_rectangle_created_with_decimal_values_as_sides() throws Exception {
-        Rectangle rectangle = new Rectangle(7.5, 5);
+    public void perimeterOfRectangleShouldGivePerimeterWhenPositiveValuesAreGivenAsLengthAndWidth() throws Exception {
+        Rectangle rectangle = Rectangle.create(7.5, 5);
         double expected = 25;
-        Assert.assertEquals(expected,rectangle.calculatePerimeter(),2);
+        assertEquals(expected, rectangle.calculatePerimeter(), 2);
     }
 }
