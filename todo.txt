@@ -3,3 +3,11 @@
 -> As a math student, I want to represent a rectangle, so that i will be able to calculate perimeter.
 
 -> As a math student, I want to represent a square, so that i will be able to calculate area and perimeter.
+
+-> As a math student, I want to represent a chance of getting tails when flipping a coin.
+
+-> As a math student, I want to represent a chance of NOT getting tails when flipping a coin.
+
+-> As a math student, I want to represent a chance of getting tails when flipping two coins.
+
+-> As a math student, I want to represent a chance of getting at least one tails when flipping two coins.

@@ -1,3 +1,5 @@
+package shape;
+
 /*
     job of Square class-
         Calculate all the calculations which includes sides of square

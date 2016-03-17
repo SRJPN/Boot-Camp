@@ -1,3 +1,5 @@
+package shape;
+
 /*
     job of Rectangle class-
         Calculate all the calculations which includes length and/or width of the Rectangle
