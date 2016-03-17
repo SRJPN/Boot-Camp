@@ -1,39 +1,37 @@
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class RectangleTest {
 
+    @Rule
+    public ExpectedException exception = ExpectedException.none();
+
     @Test
-    public void rectangleCannotBeCreatedUsingNegativeValues() throws Exception {
-        try {
-            Rectangle.create(-2, -6);
-            assertTrue(false);
-        } catch (Exception e) {
-            assertEquals("Rectangle cannot be created with length -2.0 and width -6.0", e.getMessage());
-        }
+    public void rectangleCannotBeCreatedUsingNegativeValues() throws NonPositiveValueException {
+        exception.expect(NonPositiveValueException.class);
+        exception.expectMessage("Rectangle cannot be created with length -2.0 and width -6.0");
+        Rectangle.create(-2, -6);
     }
 
     @Test
-    public void rectangleCannotBeCreatedUsingZeroAsLengthOrWidth() throws Exception {
-        try {
-            Rectangle.create(3, 0);
-            assertTrue(false);
-        } catch (Exception e) {
-            assertEquals("Rectangle cannot be created with length 3.0 and width 0.0", e.getMessage());
-        }
+    public void rectangleCannotBeCreatedUsingZeroAsLengthOrWidth() throws NonPositiveValueException {
+        exception.expect(NonPositiveValueException.class);
+        exception.expectMessage("Rectangle cannot be created with length 3.0 and width 0.0");
+        Rectangle.create(3, 0);
     }
 
     @Test
-    public void areaOfRectangleShouldGiveAreaWhenPositiveValuesAreGivenAsLengthAndWidth() throws Exception {
+    public void areaOfRectangleShouldGiveAreaWhenPositiveValuesAreGivenAsLengthAndWidth() throws NonPositiveValueException {
         Rectangle rectangle = Rectangle.create(7.5, 5);
         double expected = 37.5;
         assertEquals(expected, rectangle.calculateArea(), 2);
     }
 
     @Test
-    public void perimeterOfRectangleShouldGivePerimeterWhenPositiveValuesAreGivenAsLengthAndWidth() throws Exception {
+    public void perimeterOfRectangleShouldGivePerimeterWhenPositiveValuesAreGivenAsLengthAndWidth() throws NonPositiveValueException {
         Rectangle rectangle = Rectangle.create(7.5, 5);
         double expected = 25;
         assertEquals(expected, rectangle.calculatePerimeter(), 2);

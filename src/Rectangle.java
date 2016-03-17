@@ -6,9 +6,9 @@
 public class Rectangle {
     private double length, width;
 
-    public static Rectangle create(double length, double width) throws Exception {
+    public static Rectangle create(double length, double width) throws NonPositiveValueException {
         if (length <= 0 || width <= 0)
-            throw new Exception("Rectangle cannot be created with length "+length+" and width "+width);
+            throw new NonPositiveValueException(length,width);
         return new Rectangle(length, width);
     }
 
