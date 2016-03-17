@@ -1,3 +1,5 @@
 -> As a math student, I want to represent a rectangle, so that i will be able to calculate area.
 
 -> As a math student, I want to represent a rectangle, so that i will be able to calculate perimeter.
+
+-> As a math student, I want to represent a square, so that i will be able to calculate area and perimeter.
