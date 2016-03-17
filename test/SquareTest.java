@@ -11,15 +11,15 @@ public class SquareTest {
 
     @Test
     public void squareCannotBeCreatedUsingNegativeValues() {
-        exception.expect(NonPositiveValueExceptionForSquare.class);
-        exception.expectMessage("Square cannot be created with side -2.0");
+        exception.expect(NonPositiveValueException.class);
+        exception.expectMessage("Shape cannot be created with length -2.0");
         Square.create(-2);
     }
 
     @Test
     public void squareCannotBeCreatedUsingZeroAsLengthOrWidth() {
-        exception.expect(NonPositiveValueExceptionForSquare.class);
-        exception.expectMessage("Square cannot be created with side 0.0");
+        exception.expect(NonPositiveValueException.class);
+        exception.expectMessage("Shape cannot be created with length 0.0");
         Square.create(0);
     }
 

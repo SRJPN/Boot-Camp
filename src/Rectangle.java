@@ -8,8 +8,10 @@ public class Rectangle  {
     private double length, width;
 
     public static Rectangle create(double length, double width) throws NonPositiveValueException {
-        if (length <= 0 || width <= 0)
-            throw new NonPositiveValueException(length,width);
+        if (length <= 0)
+            throw new NonPositiveValueException(length);
+        else if (width <= 0)
+            throw new NonPositiveValueException(width);
         return new Rectangle(length, width);
     }
 

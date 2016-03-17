@@ -12,14 +12,14 @@ public class RectangleTest {
     @Test
     public void rectangleCannotBeCreatedUsingNegativeValues() {
         exception.expect(NonPositiveValueException.class);
-        exception.expectMessage("Rectangle cannot be created with length -2.0 and width -6.0");
+        exception.expectMessage("Shape cannot be created with length -2.0");
         Rectangle.create(-2, -6);
     }
 
     @Test
     public void rectangleCannotBeCreatedUsingZeroAsLengthOrWidth() {
         exception.expect(NonPositiveValueException.class);
-        exception.expectMessage("Rectangle cannot be created with length 3.0 and width 0.0");
+        exception.expectMessage("Shape cannot be created with length 0.0");
         Rectangle.create(3, 0);
     }
 
