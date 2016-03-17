@@ -5,7 +5,7 @@
  */
 
 public class Square extends Rectangle {
-    public static Square create(double lengthOfSide){
+    public static Square create(double lengthOfSide) throws NonPositiveValueException {
         if(lengthOfSide <= 0)
             throw new NonPositiveValueException(lengthOfSide);
         return new Square(lengthOfSide);

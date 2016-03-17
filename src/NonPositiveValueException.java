@@ -1,5 +1,5 @@
-public class NonPositiveValueException extends RuntimeException {
+public class NonPositiveValueException extends Exception {
     public NonPositiveValueException(double length) {
-        super("Shape cannot be created with length "+length);
+        super("Expected positive values,but got "+length);
     }
 }
