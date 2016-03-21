@@ -10,14 +10,14 @@ public class BagTest {
     @Test
     public void balls_can_be_added_to_the_bag() {
         Bag bag = new Bag();
-        Object ball = new Object();
+        Ball ball = new Ball();
         assertTrue(bag.add(ball));
     }
 
     @Test
     public void bag_can_hold_maximum_12_balls() {
         Bag bag = new Bag();
-        Object ball = new Object();
+        Ball ball = new Ball();
         assertTrue(bag.add(ball));
         assertTrue(bag.add(ball));
         assertTrue(bag.add(ball));
