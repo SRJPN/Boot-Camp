@@ -9,12 +9,19 @@ import java.util.ArrayList;
 
 public class Bag {
     private static int MAXNUMBEROFBALLS = 12;
-    private ArrayList<Ball> balls = new ArrayList<>(MAXNUMBEROFBALLS);
+    private ArrayList<Ball> balls;
 
     public Bag() {
+        balls = new ArrayList<>(MAXNUMBEROFBALLS);
     }
 
-    public boolean add(Ball ball) {
-        return balls.size() < MAXNUMBEROFBALLS && balls.add(ball);
+    public boolean add(Ball other) {
+        int count = 0;
+        for (Ball ball : balls){
+            if(ball.isSameColour(other))
+                count++;
+        }
+        if(count>2) return false;
+        return balls.size() < MAXNUMBEROFBALLS && balls.add(other);
     }
 }

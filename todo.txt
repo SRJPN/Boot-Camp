@@ -29,3 +29,5 @@ As a math student, I want to call out errors in a question paper that adds liter
 The kingdom of Balloria is known for its wizards and their colourful magical balls. These balls are very powerful and have to be stored safely when not in use.
 
 As a provider of a service that lets wizards store their balls, i'd like a bag that can hold a maximum of 12 balls.
+
+As a provider of a service that lets wizard store their balls, I'd like a bag that allows a wizard to only put in a maximum of 3 green balls
