@@ -31,3 +31,12 @@ The kingdom of Balloria is known for its wizards and their colourful magical bal
 As a provider of a service that lets wizards store their balls, i'd like a bag that can hold a maximum of 12 balls.
 
 As a provider of a service that lets wizard store their balls, I'd like a bag that allows a wizard to only put in a maximum of 3 green balls
+
+As a provider of a service that lets wizard store their balls I'd like a bag that prevents a wizard from adding double the number of red balls than green balls.
+
+Ballorian Law is very strict about the placement of balls. If any of the balls violate any of the placement rules while being placed next to each other,the balls will explode and destroy Balloria
+
+As a provider of a service that lets wizards store their balls, I have to report any attempt that violates any of the placement rules.
+
+As a provider of a service that lets wizard store their balls, I'd like a bag that lets a wizard add as many blue balls as a bag can hold.
+
