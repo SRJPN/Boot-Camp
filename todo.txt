@@ -13,3 +13,19 @@
 -> As a math student, I want to represent a chance of getting at least one tails when flipping two coins.
 
 -> p(A||B) = !(!p(A) && !p(B))
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+As a math student(not a good one), I wish to compare volumes and lengths. 1 gallon = 1 inch;
+
+As a math student, I want to be able to add two volumes in any unit and the standard output is litres.
+
+As a math student, I want to call out errors in a question paper that adds liters with inches.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+21-03-2016
+==========
+
+The kingdom of Balloria is known for its wizards and their colourful magical balls. These balls are very powerful and have to be stored safely when not in use.
+
+As a provider of a service that lets wizards store their balls, i'd like a bag that can hold a maximum of 12 balls.

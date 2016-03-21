@@ -22,6 +22,5 @@ public class Centimeter implements Unit {
         Centimeter that = (Centimeter) o;
 
         return Double.compare(that.centimeter, centimeter) == 0;
-
     }
 }

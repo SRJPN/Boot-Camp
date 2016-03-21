@@ -14,6 +14,10 @@ public class Inch implements Unit {
         return converter.convert(inch);
     }
 
+    public int Compare(Unit otherMesurement){
+        return 0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -22,6 +26,9 @@ public class Inch implements Unit {
         Inch inch1 = (Inch) o;
 
         return Double.compare(inch1.inch, inch) == 0;
+    }
 
+    public Inch add(Inch inch1) {
+        return new Inch(inch+inch1.inch);
     }
 }
