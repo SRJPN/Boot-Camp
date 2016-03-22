@@ -5,21 +5,15 @@ package wizard;
         - should be able to compare with another ball colour
  */
 
-public enum Ball {
-    GREEN("GREEN"),
-    BLUE("BLUE"),
-    RED("RED");
-    private final String colour;
+public class Ball {
+    private final Colour colour;
 
-    Ball(String colour) {
-        this.colour = colour.toUpperCase();
+    public Ball(Colour colour) {
+        this.colour = colour;
     }
 
-    public boolean isSameColour(Ball other){
-        return this.colour.equals(other.colour);
+    public boolean isOfColour(Colour other) {
+        return this.colour.equals(other);
     }
 
-    public String getColour() {
-        return colour;
-    }
 }
