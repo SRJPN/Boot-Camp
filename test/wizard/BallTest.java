@@ -1,6 +1,7 @@
 package wizard;
 
 import org.junit.Test;
+import wizard.ball.Ball;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;

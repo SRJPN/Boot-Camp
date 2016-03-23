@@ -1,8 +1,10 @@
 package wizard;
 
+import wizard.ball.Ball;
 import wizard.ball.Balls;
 import wizard.rules.Rule;
 import wizard.rules.Rules;
+import wizard.summary.Summary;
 
 /*
     Job of the class
@@ -33,5 +35,9 @@ public class Bag {
 
     public boolean isFull(){
         return balls.size()==maxBallLimit;
+    }
+
+    public Summary summerize(Summary summary){
+        return  summary.summerize(balls);
     }
 }

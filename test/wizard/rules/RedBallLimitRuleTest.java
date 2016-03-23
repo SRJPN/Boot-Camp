@@ -1,7 +1,7 @@
 package wizard.rules;
 
 import org.junit.Test;
-import wizard.Ball;
+import wizard.ball.Ball;
 import wizard.Colour;
 import wizard.ball.Balls;
 

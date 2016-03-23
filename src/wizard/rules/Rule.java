@@ -1,6 +1,6 @@
 package wizard.rules;
 
-import wizard.Ball;
+import wizard.ball.Ball;
 import wizard.ball.Balls;
 
 public interface Rule {

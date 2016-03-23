@@ -1,6 +1,6 @@
 package wizard.rules;
 
-import wizard.Ball;
+import wizard.ball.Ball;
 import wizard.Colour;
 import wizard.ball.Balls;
 

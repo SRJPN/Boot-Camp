@@ -2,6 +2,7 @@ package wizard;
 
 import org.junit.Before;
 import org.junit.Test;
+import wizard.ball.Ball;
 import wizard.rules.GreenBallLimitRule;
 import wizard.rules.RedBallLimitRule;
 import wizard.rules.Rules;

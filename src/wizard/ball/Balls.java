@@ -1,11 +1,11 @@
 package wizard.ball;
 
-import wizard.Ball;
 import wizard.Colour;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Balls {
+public class Balls implements Iterable<Ball> {
     private final ArrayList<Ball> balls;
 
     public Balls() {
@@ -28,5 +28,10 @@ public class Balls {
 
     public int size() {
         return balls.size();
+    }
+
+    @Override
+    public Iterator<Ball> iterator() {
+        return balls.iterator();
     }
 }

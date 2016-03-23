@@ -1,9 +1,11 @@
-package wizard;
+package wizard.ball;
 
 /*
     Job Of the Class
         - should be able to compare with another ball colour
  */
+
+import wizard.Colour;
 
 public class Ball {
     private final Colour colour;
